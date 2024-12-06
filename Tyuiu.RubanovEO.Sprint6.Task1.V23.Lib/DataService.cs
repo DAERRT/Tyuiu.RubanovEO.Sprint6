@@ -10,7 +10,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task1.V23.Lib
             List<double> ans = new List<double>();
             for (double i = startValue; i <= stopValue; i++)
             {
-                ans.Add(Math.Round(Math.Sin(i) + ((2d*i)/3d) - Math.Cos(i) * 4d * i, 3));
+                ans.Add(Math.Round(Math.Sin(i) + ((2d*i)/3d) - Math.Cos(i) * 4d * i, 2));
             }
             double[] ans_ = ans.ToArray();
             return ans_;
