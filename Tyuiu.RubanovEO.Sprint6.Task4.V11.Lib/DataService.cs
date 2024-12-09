@@ -11,7 +11,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task4.V11.Lib
             double j = startValue;
             for (int i = 0; i < res.Length; i++)
             {
-                if ((2d - (2d*j)) == 0)
+                if ((2d - (2d*j)) != 0)
                 {
                     res[i] = Math.Round(Math.Cos(j) + (Math.Sin(j)/(2d-(2d*j))) - 4d*j, 3);
                 }
