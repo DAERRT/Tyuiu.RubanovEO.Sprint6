@@ -35,5 +35,10 @@ namespace Tyuiu.RubanovEO.Sprint6.Task0.V18
         {
             MessageBox.Show("Таск 0 выполнил студент группы ПКТБ-24-1 Рубанов Егор Олегович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void textBoxVariable_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

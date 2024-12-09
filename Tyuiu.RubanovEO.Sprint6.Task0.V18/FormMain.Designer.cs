@@ -94,6 +94,7 @@
             textBoxVariable.Name = "textBoxVariable";
             textBoxVariable.Size = new Size(96, 23);
             textBoxVariable.TabIndex = 1;
+            textBoxVariable.TextChanged += textBoxVariable_TextChanged;
             textBoxVariable.KeyPress += textBoxVariable_KeyPress;
             // 
             // labelVariable
