@@ -13,7 +13,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task4.V11.Lib
             {
                 if ((2d - (2d*j)) != 0)
                 {
-                    res[i] = Math.Round(Math.Cos(j) + (Math.Sin(j)/(2d-(2d*j))) - 4d*j, 3);
+                    res[i] = Math.Round(Math.Cos(j) + (Math.Sin(j)/(2d-(2d*j))) - 4d*j, 2);
                 }
                 else
                 {
