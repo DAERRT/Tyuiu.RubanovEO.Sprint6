@@ -7,7 +7,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task4.V11.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            double[] res = new double[10];
+            double[] res = new double[11];
             double j = startValue;
             for (int i = 0; i < res.Length; i++)
             {
