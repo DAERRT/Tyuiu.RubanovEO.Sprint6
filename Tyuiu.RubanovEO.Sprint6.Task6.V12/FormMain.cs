@@ -23,8 +23,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task6.V12
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            string str = "w";
-            textBoxOut.Text = ds.CollectTextFromFile(str,openFilePath1);
+            textBoxOut.Text = ds.CollectTextFromFile(openFilePath1);
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
