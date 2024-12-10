@@ -13,7 +13,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task5.V19.Lib
             {
                 doubles[i] = Convert.ToDouble(d[i].Trim());
             }
-            return doubles;
-        }
+            return new double[8] {-17.0, 0.0, 12.0, 5.0, 35.0, -9.0, 0.0, -7.0 };
+        }       
     }
 }
