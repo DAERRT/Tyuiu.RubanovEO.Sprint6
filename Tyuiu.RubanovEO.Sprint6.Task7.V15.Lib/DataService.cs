@@ -14,13 +14,13 @@ namespace Tyuiu.RubanovEO.Sprint6.Task7.V15.Lib
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int rows = lines.Length;
-            int columns = lines[0].Split('\t').Length;
+            int columns = lines[0].Split(';').Length;
 
             int[,] arrayValues = new int[rows, columns];
 
             for (int i = 0; i < rows; i++)
             {
-                string[] line_i = lines[i].Split('\t');
+                string[] line_i = lines[i].Split(';');
                 for (int j = 0; j < columns; j++)
                 {
                     arrayValues[i,j] = Convert.ToInt32(line_i[j]);
