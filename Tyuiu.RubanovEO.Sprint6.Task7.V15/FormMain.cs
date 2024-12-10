@@ -28,13 +28,13 @@ namespace Tyuiu.RubanovEO.Sprint6.Task7.V15
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             rows = lines.Length;
-            columns = lines[0].Split(';').Length;
+            columns = lines[0].Split('\t').Length;
 
             int[,] arrayValues = new int[rows, columns];
 
             for (int i = 0; i < rows; i++)
             {
-                string[] line_i = lines[i].Split(';');
+                string[] line_i = lines[i].Split('\t');
                 for (int j = 0; j < columns; j++)
                 {
                     arrayValues[i, j] = Convert.ToInt32(line_i[j]);
@@ -65,6 +65,14 @@ namespace Tyuiu.RubanovEO.Sprint6.Task7.V15
             {
                 dataGridViewOut.Columns[i].Width = 25;
                 dataGridViewIn.Columns[i].Width = 25;
+            }
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewIn.Rows[i].Cells[j].Value = arrayValues[i, j];
+                }
             }
 
 
@@ -116,7 +124,7 @@ namespace Tyuiu.RubanovEO.Sprint6.Task7.V15
                 {
                     if (j != columns - 1)
                     {
-                        str += dataGridViewOut.Rows[i].Cells[j].Value + ";";
+                        str += dataGridViewOut.Rows[i].Cells[j].Value + "\t";
                     }
                     else
                     {
