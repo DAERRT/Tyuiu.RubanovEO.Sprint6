@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBox1 = new GroupBox();
             textBox3 = new TextBox();
             groupBox2 = new GroupBox();
@@ -43,9 +43,9 @@
             groupBox3 = new GroupBox();
             chartMain = new System.Windows.Forms.DataVisualization.Charting.Chart();
             dataGridViewFunc = new DataGridView();
-            label1 = new Label();
             X = new DataGridViewTextBoxColumn();
             Y = new DataGridViewTextBoxColumn();
+            label1 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -154,16 +154,16 @@
             // 
             // chartMain
             // 
-            chartArea4.Name = "ChartArea1";
-            chartMain.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            chartMain.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            chartMain.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartMain.Legends.Add(legend1);
             chartMain.Location = new Point(158, 37);
             chartMain.Name = "chartMain";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            chartMain.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartMain.Series.Add(series1);
             chartMain.Size = new Size(432, 327);
             chartMain.TabIndex = 2;
             chartMain.Text = "chart1";
@@ -178,15 +178,6 @@
             dataGridViewFunc.Size = new Size(146, 327);
             dataGridViewFunc.TabIndex = 1;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Результат:";
-            // 
             // X
             // 
             X.HeaderText = "X";
@@ -199,6 +190,15 @@
             Y.Name = "Y";
             Y.Width = 70;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Результат:";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -210,7 +210,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 2 | Вариант 12 | Рубанов Е. О.";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

@@ -77,6 +77,7 @@
             // buttonOpen
             // 
             buttonOpen.BackColor = Color.Blue;
+            buttonOpen.Enabled = false;
             buttonOpen.Location = new Point(612, 12);
             buttonOpen.Name = "buttonOpen";
             buttonOpen.Size = new Size(88, 75);
@@ -184,7 +185,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 5 | Вариант 19 | Рубанов Е. О.";
             panel1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();

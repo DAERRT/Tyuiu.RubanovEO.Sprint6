@@ -61,9 +61,9 @@ namespace Tyuiu.RubanovEO.Sprint6.Task4.V11
 
 
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show($"{ex.Message} ¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

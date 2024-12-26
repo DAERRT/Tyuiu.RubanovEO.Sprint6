@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -41,6 +42,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(179, 249);
@@ -81,7 +83,7 @@
             label4.Name = "label4";
             label4.Size = new Size(282, 15);
             label4.TabIndex = 4;
-            label4.Text = "Тюменский индустриальный университет (с) 2024";
+            label4.Text = "Тюменский индустриальный университет (с) 2025";
             // 
             // label5
             // 

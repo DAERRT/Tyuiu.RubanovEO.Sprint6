@@ -11,10 +11,11 @@ namespace Tyuiu.RubanovEO.Sprint6.Task5.V19
 
         DataService ds = new DataService();
 
-        string path = $@"{Path.GetTempPath()}InPutFileTask5V19.txt";
+        string path = $@"C:\Users\Egor\source\repos\Tyuiu.RubanovEO.Sprint6\InPutFileTask5V19.txt";
        
         private void buttonDone_Click(object sender, EventArgs e)
         {
+
             dataGridViewMain.ColumnCount = 2;
             dataGridViewMain.Columns[0].Width = 20;
             dataGridViewMain.Columns[1].Width = 50;
@@ -31,12 +32,13 @@ namespace Tyuiu.RubanovEO.Sprint6.Task5.V19
                 dataGridViewMain.Rows.Add(Convert.ToString(i), Convert.ToString(doubles[i]));
                 chart1.Series[0].Points.AddXY(i, doubles[i]);
             }
+            buttonOpen.Enabled = true;
         }
 
         private void buttonOpen_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process txt = new System.Diagnostics.Process();
-            txt.StartInfo.FileName = "notepad.txt";
+            txt.StartInfo.FileName = "notepad.exe";
             txt.StartInfo.Arguments = path;
             txt.Start();
         }

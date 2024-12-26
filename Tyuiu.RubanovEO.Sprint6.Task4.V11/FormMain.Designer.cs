@@ -79,10 +79,10 @@
             groupBox3.Controls.Add(textBoxStart);
             groupBox3.Controls.Add(label2);
             groupBox3.Controls.Add(label1);
-            groupBox3.Dock = DockStyle.Left;
-            groupBox3.Location = new Point(465, 5);
+            groupBox3.Dock = DockStyle.Right;
+            groupBox3.Location = new Point(460, 5);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(542, 90);
+            groupBox3.Size = new Size(504, 90);
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ввод данных";
@@ -257,7 +257,7 @@
             Controls.Add(panelTop);
             MaximumSize = new Size(1920, 1280);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 4 | Вариант 11 | Рубанов Е. О.";
             panelTop.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();

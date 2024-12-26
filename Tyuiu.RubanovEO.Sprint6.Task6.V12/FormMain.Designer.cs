@@ -67,6 +67,7 @@
             // 
             // buttonHelp
             // 
+            buttonHelp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonHelp.Location = new Point(731, 3);
             buttonHelp.Name = "buttonHelp";
             buttonHelp.Size = new Size(86, 56);
@@ -209,7 +210,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 6 | Вариант 12 | Рубанов Е. О.";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
